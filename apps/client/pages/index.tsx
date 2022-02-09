@@ -1,10 +1,20 @@
-import { Container, Row, Image, Button } from 'react-bootstrap'
 
+import SearchBar from '@components/SearchBar';
+import Filters from '@components/Filters';
+import FilterIcons from '@components/FilterIcons';
+import CourseCards from '@components/CourseCards'
+import Header from '@components/Header'
+
+import {Container} from 'react-bootstrap';
 export function Index() {
   return (
+
     <Container>
-      <Button variant='success'>Click me!</Button>
-      <Image src='https://via.placeholder.com/900x300'/>
+      <Header/>
+      <SearchBar/>
+      <Filters/>
+      <FilterIcons/>
+      <CourseCards/>
     </Container>
   );
 }
